@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var km=prompt("Inserisci il numero di km");
+      var età=prompt("Inserisci la tua età");
+      var prezzoi = km * 0.21;
+      var sconto;
+      var prezzof;
+      if (età<18){
+        sconto=(prezzoi * 20)/100;
+      }
+      if (età>=18 && età<65){
+        sconto=0;
+      }
+      if (età>=65){
+        sconto=(prezzoi * 40)/100;
+      }
+      prezzof= prezzoi - sconto;
+      document.writeln('Il prezzo del biglietto è di euro '+ prezzof);
+    </script>
+  </body>
+</html>
